@@ -1,5 +1,5 @@
-LOCAL=rust:1.41.1-amazonlinux2018.03.0.20191219.0
-REMOTE=ewbankkit/rust-amazonlinux:1.41.1-2018.03.0.20191219.0
+LOCAL=rust:1.43.0-amazonlinux2018.03.0.20191219.0
+REMOTE=ewbankkit/rust-amazonlinux:1.43.0-2018.03.0.20191219.0
 
 .PHONY: all image push
 
