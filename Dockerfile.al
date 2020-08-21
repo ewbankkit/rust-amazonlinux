@@ -8,7 +8,7 @@ ENV RUSTUP_HOME=/usr/local/rustup \
     PATH=/usr/local/cargo/bin:$PATH \
     RUST_VERSION=1.45.0
 
-RUN yum install -y gcc gcc-c++ openssl-devel;\
+RUN yum install -y gcc gcc-c++ openssl-devel; \
     curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --profile minimal --default-toolchain $RUST_VERSION -y; \
     chmod -R a+w $RUSTUP_HOME $CARGO_HOME; \
     rustup --version; \
