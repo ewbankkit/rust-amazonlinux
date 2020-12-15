@@ -6,7 +6,7 @@ LABEL maintainer="Kit Ewbank <Kit_Ewbank@hotmail.com>"
 ENV RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
     PATH=/usr/local/cargo/bin:$PATH \
-    RUST_VERSION=1.45.0
+    RUST_VERSION=1.48.0
 
 RUN yum install -y gcc gcc-c++ openssl-devel; \
     curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --profile minimal --default-toolchain $RUST_VERSION -y; \
